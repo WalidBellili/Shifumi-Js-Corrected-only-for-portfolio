@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifumi</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main>
+      <section id="game">
+        <h1>Shifumi</h1>
+
+        <div class="ring">
+          <div class="side gandalf">
+            <div class="player">
+              <div class="avatar"></div>
+              <h4>Gandalf le man</h4>
+            </div>
+            <img id="player" class="sign-image" src="./images/rock-player.png">
+          </div>
+          <div class="side trump">
+            <div class="player">
+              <h4>Un robot idiot</h4>
+              <div class="avatar"></div>
+            </div>
+            <img id="ai" class="sign-image" src="./images/rock-ai.png">
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button id="rock" class="game-buttons">Pierre</button>
+          <button id="paper" class="game-buttons">Feuille</button>
+          <button id="scissors" class="game-buttons">Ciseaux</button>
+        </div>
+      </section>
+      <aside>
+        <div class="scores">
+          <h2>Score</h2>
+          <div class="score-container">
+            <div class="score gandalf">
+              <div class="avatar"></div>
+              <p id="player-score">0</p>
+            </div>
+            <div class="score trump">
+              <p id="ai-score">0</p>
+              <div class="avatar"></div>
+            </div>
+          </div>
+        </div>
+        
+        <h2>Game history</h2>
+        <div class="game-history-container" id="game-history">
+          <p id="empty"></p>
+      </aside>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
